@@ -1,4 +1,4 @@
-// import imageRickMorty from "./img";
+import imageRickMorty from "./img/rick-morty.png";
 import { useState } from 'react';
 import './App.css';
 import Characters from './Components/Characters';
@@ -22,7 +22,7 @@ function App() {
          <h1 className="title">Rick and Morty</h1>
          {characters ? (<Characters characters={characters} setCharacters={setCharacters}></Characters>) :
           ( <>
-            {/* <img src={} alt="Rick and Morty" className="img-home"></img> */}
+            {<img src={imageRickMorty} alt="Rick and Morty" className="img-home"></img>}
             <button onClick={reqAPI} className="btn-search" >Buscar personajes</button> 
             </>
           )
